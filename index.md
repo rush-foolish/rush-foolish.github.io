@@ -5,7 +5,7 @@
 ## Index
 
 ### BIRT
-- [BIRT_learning](rush-foolish.github.io/BIRT/BIRT_learning)
+- [BIRT_Help](rush-foolish.github.io/BIRT/BIRT_Help)
 
 ### Python
 - [pyhton_test](rush-foolish.github.io/Python/pyhton_test)
