@@ -9,5 +9,5 @@ BIRT is an open source software project that provides the BIRT technology platfo
 	- download [customers.rptdesigner](http://www.eclipse.org/birt/documentation/tutorial/tutorial-1.php), save the file(XML) into Eclipse project directory
 2. tutorial
 	- [video](http://www.eclipse.org/birt/documentation/tutorial/)
-	 
+	- [learning tutorial](http://www.cnblogs.com/birtbird/archive/2013/01/10/2855480.html)
 
