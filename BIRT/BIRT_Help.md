@@ -9,9 +9,9 @@ BIRT is an open source software project that provides the BIRT technology platfo
 	- download [customers.rptdesigner](http://www.eclipse.org/birt/documentation/tutorial/tutorial-1.php), save the file(XML) into Eclipse project directory
 2. tutorial
 	- [video](http://www.eclipse.org/birt/documentation/tutorial/)
-	 
+        - [learning tutorial](http://www.cnblogs.com/birtbird/archive/2013/01/10/2855480.html)
 3. Palette
-`Palette包括以下一些常用的元素：
+Palette包括以下一些常用的元素：
 
 标签（Label）：标签元素用于显示静态文本，标签元素的外观可以通过本地进行设置，如设置标签元素的超级连接、字体大小等属性；
 
