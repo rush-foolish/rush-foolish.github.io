@@ -1,4 +1,5 @@
 ## Python基础
+
 - **字符串和编码**
     1. ASCII编码和Unicode编码的区别：ASCII编码是1个字节，而Unicode编码通常是2个字节（特殊的用4个字符）
     2. 在网页上一般开头用 **<meta charset="UTF-8" />**字样的表示编码方式采用utf-8
@@ -36,7 +37,8 @@ print( 'Hi, %s, you have $%d, I just have $%.2f' % ('R', 100,3.14159))
 ```
 
 - **list 和 tuple**
-    1. **list**：一种有序的集合，可以随时添加和删除其中的元素，另外list的元素也可是list
+
+	1. **list**：一种有序的集合，可以随时添加和删除其中的元素，另外list的元素也可是list
 
     ```python
     ##list基础
@@ -59,7 +61,7 @@ print( 'Hi, %s, you have $%d, I just have $%.2f' % ('R', 100,3.14159))
     #['l1', 'app', 'l3']
     ```
 
-    2. **tuple**：tuple用（）表示，不可变，当元组中只有一个元素时，一般用(1，)表示，防止python*解读成小括号中的数字1*。**可变的tuple**，如：
+	2. **tuple**：tuple用（）表示，不可变，当元组中只有一个元素时，一般用(1，)表示，防止python*解读成小括号中的数字1*。**可变的tuple**，如：
 
     ```python
     t = ('a', 'b', ['A', 'B'])
@@ -75,7 +77,7 @@ print( 'Hi, %s, you have $%d, I just have $%.2f' % ('R', 100,3.14159))
 
 - **dict 和 set**
 
-    1. dict : 键-值（key-value）存储，具有极快的查找速度, 如果通过list来查找，必须利用两个list通过对应位置查找，list越大查找越慢，dict示例：
+	1. dict : 键-值（key-value）存储，具有极快的查找速度, 如果通过list来查找，必须利用两个list通过对应位置查找，list越大查找越慢，dict示例：
 
     ```python
     d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
@@ -93,7 +95,7 @@ print( 'Hi, %s, you have $%d, I just have $%.2f' % ('R', 100,3.14159))
     查找和插入的速度极快，不会随着key的增加而变慢| 需要占用大量的内存，内存浪费多
     查找和插入的时间随着元素的增加而增加| 占用空间小，浪费内存很少
 
-    2. set : set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key,重复的会自动过滤
+	2. set : set和dict类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在set中，没有重复的key,重复的会自动过滤
 
     ```python
     s1 = set([1, 2, 3])
@@ -138,7 +140,7 @@ else:
 
  - **循环**
 
-     1. for ： for x in ...
+	1. for ： for x in ...
 
      ```python
     names = ['Bart', 'Lisa', 'Adam']
@@ -146,7 +148,7 @@ else:
         print(name)
      ```
 
-     2. while : 
+	2. while : 
 
      ```
     #break
