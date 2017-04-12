@@ -8,7 +8,7 @@
 - [BIRT_Help](rush-foolish.github.io/BIRT/BIRT_Help)
 
 ### Python
-- [python基础](rush-foolish.github.io/Python/python基础)
+- [Python基础](rush-foolish.github.io/Python/Python基础)
 - [Python基础函数](rush-foolish.github.io/Python/Python基础函数)
 - [Python简介](rush-foolish.github.io/Python/Python简介)
 - [函数的延伸](rush-foolish.github.io/Python/函数的延伸)
