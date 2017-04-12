@@ -45,47 +45,47 @@ print(a(-1)) ##1
 - **参数**  
 
 	1. **可变参数**
-
-	![argument](\_images\arguments1.PNG)
-
+	
+		![argument](\_images\arguments1.PNG)
+	
 	2. **关键字参数**(利用关键字参数来定义这个函数就能满足注册的需求，必填项和可选项的区别)
-
-	```python
-	def person(name, age, **kw):
-	    print('name:', name, 'age:', age, 'other:', kw)
-	person('R',15) 
-	#name: R age: 15 other: {}
-	person('M',18,city ='SH')
-	# name: M age: 18 other: {'city': 'SH'}
-	other = {'city':'bj','gender':'F'}
-	person('M',18,**other)
-	#name: M age: 18 other: {'city': 'bj', 'gender': 'F'}
-	```
 	
-	> NOTE:可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个**tuple**; 关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个**dict**。
-	    
+		```python
+		def person(name, age, **kw):
+		    print('name:', name, 'age:', age, 'other:', kw)
+		person('R',15) 
+		#name: R age: 15 other: {}
+		person('M',18,city ='SH')
+		# name: M age: 18 other: {'city': 'SH'}
+		other = {'city':'bj','gender':'F'}
+		person('M',18,**other)
+		#name: M age: 18 other: {'city': 'bj', 'gender': 'F'}
+		```
+		
+		> NOTE:可变参数允许你传入0个或任意个参数，这些可变参数在函数调用时自动组装为一个**tuple**; 关键字参数允许你传入0个或任意个含参数名的参数，这些关键字参数在函数内部自动组装为一个**dict**。
+		    
 	3. **命名关键字参数**: 限制关键字参数的名字,命名关键字参数需要一个特殊分隔符*，*后面的参数被视为命名关键字参数
-	
-	```python
-	def person(name, age, *, city, job):
-	    print(name, age, city, job)#Jack 24 Beijing Chaoyang
-	
-	def person1(name, age, *arg, city, job): #形参中有一个可变参数，则分隔符*可以省略
-	    print(name,age,arg, city, job) #J 25 (1,) Beijing Chaoyang
-	
-	person('Jack', 24, city='Beijing', job='Chaoyang')
-	person1('J',25,1,city='Beijing',job='Chaoyang')
-	```
-	
+		
+		```python
+		def person(name, age, *, city, job):
+		    print(name, age, city, job)#Jack 24 Beijing Chaoyang
+		
+		def person1(name, age, *arg, city, job): #形参中有一个可变参数，则分隔符*可以省略
+		    print(name,age,arg, city, job) #J 25 (1,) Beijing Chaoyang
+		
+		person('Jack', 24, city='Beijing', job='Chaoyang')
+		person1('J',25,1,city='Beijing',job='Chaoyang')
+		```
+		
 	4. **组合参数**
-	
-	```python
-	def f1(a, b, c=0, *args, **kw):
-	    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
-	
-	f1(1, 2, 3, 'a', 'b', x=99)
-	#a = 1 b = 2 c = 3 args = ('a', 'b') kw = {'x': 99}
-	```
+		
+		```python
+		def f1(a, b, c=0, *args, **kw):
+		    print('a =', a, 'b =', b, 'c =', c, 'args =', args, 'kw =', kw)
+		
+		f1(1, 2, 3, 'a', 'b', x=99)
+		#a = 1 b = 2 c = 3 args = ('a', 'b') kw = {'x': 99}
+		```
 	
    **++对于任意函数，都可以通过类似func(*args, **kw)的形式调用++**
 

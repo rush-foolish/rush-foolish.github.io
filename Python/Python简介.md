@@ -32,52 +32,52 @@ print('hello ',name)
 - **数据类型**
 
 	1. 整数和浮点数：整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的（包括除法），而浮点数运算可能会有四舍五入的误差
-	
-	```
-	print (10/3)
-	3.3333333333333335
-	print(10//3)
-	3
-	print(10%3)
-	1
-	```
-	
+		
+		```
+		print (10/3)
+		3.3333333333333335
+		print(10//3)
+		3
+		print(10%3)
+		1
+		```
+		
 	2. **字符串**：以单引号'或双引号"括起来的任意文本，''' '''表示多行内容，\为转义字符,示例如下
-	
-	```
-	print ('I\'m ok')
-	#I'm ok
-	print("I'm \"OK\"")
-	#I'm "OK"
-	print('''
-	line
-	line2
-	line3
-	''')
-	#line1
-	#line2
-	#line3
-	##多行字符串，在前面加 r##
-	s1 = r'Hello, "Bart"'
-	s2 = r'''Hello,
-	Lisa!'''
-	print(s1)
-	# Hello, "Bart"
-	print(s2)
-	# Hello,
-	# Lisa!
-	```
-	
+		
+		```
+		print ('I\'m ok')
+		#I'm ok
+		print("I'm \"OK\"")
+		#I'm "OK"
+		print('''
+		line
+		line2
+		line3
+		''')
+		#line1
+		#line2
+		#line3
+		##多行字符串，在前面加 r##
+		s1 = r'Hello, "Bart"'
+		s2 = r'''Hello,
+		Lisa!'''
+		print(s1)
+		# Hello, "Bart"
+		print(s2)
+		# Hello,
+		# Lisa!
+		```
+		
 	3. 布尔值：true/false（进行逻辑运算后的结果，可用and，or，not进行运算）
 	4. **空值 none**: 特殊的字符
 	5. **变量**：变量名必须是大小写英文、数字和_的组合，且不能用数字开头:
-	
-	```
-	a = 'ABC' #解释器创建了字符串'ABC'和变量a，并把a指向'ABC'
-	b = a #解释器创建了变量b，并把b指向a指向的字符串'ABC'
-	a = 'XYZ' ##解释器创建了字符串'XYZ'，并把a的指向改为'XYZ'，但b并没有更改
-	```
-	
-	![a](\_images\st1.PNG)
-	![b](\_images\st2.PNG)
-	![ab](\_images\st3.PNG)
+		
+		```
+		a = 'ABC' #解释器创建了字符串'ABC'和变量a，并把a指向'ABC'
+		b = a #解释器创建了变量b，并把b指向a指向的字符串'ABC'
+		a = 'XYZ' ##解释器创建了字符串'XYZ'，并把a的指向改为'XYZ'，但b并没有更改
+		```
+		
+		![a](\_images\st1.PNG)
+		![b](\_images\st2.PNG)
+		![ab](\_images\st3.PNG)
