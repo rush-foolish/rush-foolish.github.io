@@ -10,10 +10,10 @@
 
 ### Python
 
-	- Learning
+- Learning
 	- [learn](./Python/Learning/learn.test)
 
-		- TEST
+	- TEST
 		- [TT](./Python/Learning/TEST/TT.CD)
 - [Python基础](./Python/Python基础.md)
 - [Python基础函数](./Python/Python基础函数.md)
