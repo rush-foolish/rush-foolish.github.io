@@ -28,10 +28,10 @@ def walkdir(dir,n=1):
 		#if dir, continue to scan the following contents
 		elif os.path.isdir(path):
 			sign = "- "
+			dline = "\n" + "\t"*(n-2) + sign + "**" + l + "**\n"
 			if n == 1:
 				sign = "### "
 				dline = "\n" + sign + l +"\n"
-			dline = "\n" + "\t"*(n-2) + sign + "**l**" + "\n"
 			content += dline 
 			walkdir(path,n+1)
 		elif ( (n != 1) and os.path.isfile(path) ):	#if file, create the link
