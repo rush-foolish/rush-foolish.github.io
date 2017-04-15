@@ -14,24 +14,26 @@
 import os
 #markdown index content
 content = ""
-
-def walkdir(dir,n=1):	# walk through dir and return the markdown content
+# walk through dir and return the markdown content
+def walkdir(dir,n=1):	
 
 	global content
-	
-	dirlist = os.listdir(dir)	#return the files list in specific directory
+	#return the files list in specific directory
+	dirlist = os.listdir(dir)	
 	for l in dirlist:
 		path = os.path.join(dir,l)
-		if l.startswith((".","_")):	#check if the file/dir contains the prefix ./_
+		#check if the file/dir contains the prefix ./_
+		if l.startswith((".","_")):	
 			continue
-		elif os.path.isdir(path):	#if dir, continue to scan the following contents
-			#print("====%d=is dir===="%(n))
-			dline = "\t"*(n-1) + "#"*(n+2) + " "+ l + "\n"
+		#if dir, continue to scan the following contents
+		elif os.path.isdir(path):
+			sign = "###"
+			if n > 1:
+				sign = "-"
+			dline = "\n" + "\t"*(n-1) + sign + " "+ l + "\n"
 			content += dline 
-			#print(content)
 			walkdir(path,n+1)
 		elif ( (n != 1) and os.path.isfile(path) ):	#if file, create the link
-			#print(n)
 			fname = os.path.splitext(l)[0]
 			fline = "\t"*(n-2) + ("- [%s](%s)" % (fname,path)) + "\n"
 			content += fline
@@ -41,7 +43,6 @@ def walkdir(dir,n=1):	# walk through dir and return the markdown content
 		return content
 
 def createFile(fname,ftxt):
-	print(fname)
 	f = open(fname,'w')
 	
 	f.write(ftxt)
