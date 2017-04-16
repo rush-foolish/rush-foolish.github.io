@@ -21,7 +21,6 @@
 
 ### Shell
 - [VIM相关操作](./Shell/VIM相关操作.md)
-- [自定义VIM](./Shell/自定义VIM.md)
 
 ---
 Actually, miscellaneous notes rather than blog...
