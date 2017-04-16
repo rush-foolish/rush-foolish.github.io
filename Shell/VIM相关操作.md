@@ -84,23 +84,14 @@ P:在光标所在行之前粘贴
 
 ```
 <k0> - <k9>   小键盘 0 到 9
-
 <S-...>  Shift＋键
-
 <C-...>  Control＋键
-
 <M-...>  Alt＋键 或 meta＋键
-
 <A-...>  同 <M-...>
-
 <Esc>  Escape 键
-
 <Up>  光标上移键
-
 <Space>  插入空格
-
 <Tab>  插入Tab
-
 <CR>  等于<Enter>
 
 举例：
@@ -120,12 +111,12 @@ set shiftwidth=4	"the width of the auto shift
 set autowrite	"auto save the file
 set ruler	"show the cursor position at right bottom
 syntax on	"highlight syntax,linux environment: set syntax=on
-set completeopt=preview,menu "code auto complete"
-set clipboard+=unnamed "share the cut/paste board"
+set completeopt=preview,menu "code auto complete
+set clipboard+=unnamed "share the cut/paste board
 set nu
 set cursorline "show the current cursor line
-""set list "显示特殊符号
-""set listchars=tab:\|\ 	"显示tab符，并以｜高亮显示
+"set list "显示特殊符号
+"set listchars=tab:\|\ 	"显示tab符，并以｜高亮显示
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""############ AUTO Symbol Completion #########################
