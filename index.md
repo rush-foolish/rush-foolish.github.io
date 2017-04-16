@@ -9,12 +9,6 @@
 - [BIRT_Help](./BIRT/BIRT_Help.md)
 
 ### Python
-
-- **Learning**
-	- [learn](./Python/Learning/learn.test)
-
-	- **TEST**
-		- [TT](./Python/Learning/TEST/TT.CD)
 - [Python基础](./Python/Python基础.md)
 - [Python基础函数](./Python/Python基础函数.md)
 - [Python简介](./Python/Python简介.md)
@@ -25,7 +19,9 @@
 ### SAS
 - [input语句及符号简介](./SAS/input语句及符号简介.md)
 
-### SHELL
+### Shell
+- [VIM相关操作](./Shell/VIM相关操作.md)
+- [自定义VIM](./Shell/自定义VIM.md)
 
 ---
 Actually, miscellaneous notes rather than blog...
