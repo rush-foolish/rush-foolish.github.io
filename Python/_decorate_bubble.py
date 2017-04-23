@@ -1,4 +1,3 @@
-```python
 #####################################################
 #	File Name: _decorate_bubble.py
 #	Author: Rachel Liu
@@ -68,4 +67,4 @@ sort_seq = sort_bubble(r_seq)
 # bubble_seq:[2, 2, 4, 5, 7, 8]
 # distinct_seq:[8, 2, 4, 5, 7]
 # odd_seq:[8, 2, 4]
-```
+

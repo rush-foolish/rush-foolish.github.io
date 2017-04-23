@@ -144,30 +144,34 @@ filetype on
 autocmd BufNewFile *.py,*.sh,*.rb exec ":call SetFiletitle()"
 
 func SetFiletitle()
-	call setline(1,"\#####################################################")
-	call append(line("."), "\#	File Name: ".expand("%"))
-	call append(line(".")+1, "\#	Author: Rachel Liu")
-	call append(line(".")+2, "\#	Created Time: ".strftime("%Y-%m-%d"))
-	call append(line(".")+3, "\#	Description: ")
-	call append(line(".")+4, "\#	")
-    call append(line(".")+5, "\#	Modified History: ")
-	call append(line(".")+6, "\#	")		
-	call append(line(".")+7, "\#	Copyright (C)".strftime("%Y")." All Rights Reserved")
-	call append(line(".")+8, "\#####################################################")
-
 	if expand("%:e") == 'sh' 
-    	call append(line(".")+9, "\#!/usr/bin/bash")
+		call setline(1, "\#!/usr/bin/bash")
 	elseif expand("%:e") == 'py'
-		call append(line(".")+9, "\#!/usr/bin/env python")
-		call append(line(".")+10, "\#-*- coding:utf-8 -*-")
-    endif
+		call setline(1, "\#!/usr/bin/env python")
+		call setline(2, "\#-*- coding:utf-8 -*-")	
+	endif                                                  	
+	
+	call append(line("$"),"\#####################################################")
+	call append(line("$"), "\#	File Name: ".expand("%"))
+	call append(line("$"), "\#	Author: Rachel Liu")
+	call append(line("$"), "\#	Created Time: ".strftime("%Y-%m-%d"))
+	call append(line("$"), "\#	Description: ")
+	call append(line("$"), "\#	")
+    call append(line("$"), "\#	Modified History: ")
+	call append(line("$"), "\#	")		
+	call append(line("$"), "\#	Copyright (C)".strftime("%Y")." All Rights Reserved")
+	call append(line("$"), "\#####################################################")
+    
 	set list
 	set listchars=tab:\|\ 	
     autocmd BufNewFile * normal G
 	
-endfunc
-
+endfunc                                                                       
 ```
+
+**关于vim中常用配置函数介绍，可以在命令模式下键入 ：help append/setline/line/getline/expand等**
+
+另外，vim中的分屏可用 sp/vsp filename,还可利用ctrl＋W (h/j/k/l／q)进行屏幕间的移动和关闭
 
 ---
 
