@@ -157,14 +157,14 @@ func SetFiletitle()
 	call append(line("$"), "\#	Created Time: ".strftime("%Y-%m-%d"))
 	call append(line("$"), "\#	Description: ")
 	call append(line("$"), "\#	")
-    call append(line("$"), "\#	Modified History: ")
+	call append(line("$"), "\#	Modified History: ")
 	call append(line("$"), "\#	")		
 	call append(line("$"), "\#	Copyright (C)".strftime("%Y")." All Rights Reserved")
 	call append(line("$"), "\#####################################################")
     
 	set list
 	set listchars=tab:\|\ 	
-    autocmd BufNewFile * normal G
+	autocmd BufNewFile * normal G
 	
 endfunc                                                                       
 ```
