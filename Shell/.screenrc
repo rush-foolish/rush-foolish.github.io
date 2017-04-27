@@ -1,0 +1,39 @@
+# default: on
+startup_message off                    
+# default: 100
+defscrollback 4096                      
+# set default as 'fish' shell type in screen windows, or set "shell $SHELL" return the curent shell
+shell fish							  
+# set visual bell prompt as off
+vbell off								
+# default: off
+crlf off                                
+# bottom title display
+caption always "%{= kw} %H | %{kc}%?%-w%?%{kY}%n*%f %t%?(%u)%?%{= kc}%?%+w%? %=|%{kW} %l %{kw}| %{kc}%{-b}%m/%d/%Y |%{kW}%{+b}%c:%s %{wk}"
+#Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+# window tilte
+defhstatus "screen ^E (^Et) | $USER@^EH"
+
+hardstatus off
+#type screen, open 5 window, set F1-F5 to change the screen window
+screen  1 
+screen  2
+screen  3
+screen  4
+screen  5
+
+bindkey -k k1 select 1
+bindkey -k k2 select 2
+bindkey -k k3 select 3
+bindkey -k k4 select 4
+bindkey -k k5 select 5
+
+bindkey -k F1 detach 	#kill all the window, but store the screen in the buffer, can use screen - r to recover
+bindkey -k F2 quit     #completely kill the screen
+
+# use C-\ instead of C-a
+escape ^\\  #kill one window:ctrl+\+k
+
+#backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*"'
+#hardstatus lastline "%{= KW} %H [%`] %{= Kw}|%{-} %-Lw%{= bW}%n%f %t%{-}%+Lw %=%C%a %Y-%m-%d"

@@ -169,9 +169,11 @@ func SetFiletitle()
 endfunc                                                                       
 ```
 
-**关于vim中常用配置函数介绍，可以在命令模式下键入 ：help append/setline/line/getline/expand等**
+**关于[vim中常用配置函数](http://blog.chinaunix.net/uid-26642637-id-3446889.html)介绍，可以在命令模式下键入 ：help append/setline/line/getline/expand等**
 
 另外，vim中的分屏可用 sp/vsp filename,还可利用ctrl＋W (h/j/k/l／q)进行屏幕间的移动和关闭
+
+[**screenrc的设置**](https://github.com/rush-foolish/rush-foolish.github.io/blob/master/Shell/.screenrc)
 
 ---
 
