@@ -29,7 +29,7 @@ $ ssh-keygen -t rsa
 -t:type
 ```
 
-![ssh_keygen](./_images/ssh_keygen.PNG)
+![ssh_keygen](/_images/ssh_keygen.PNG)
 
 - 远程服务器端
 
@@ -41,4 +41,4 @@ $ chmod 650 .ssh/authorized_keys
 ```
 退出远程系统再次登录，即可免密码登录，查看当前目录下的known_hosts文件，里面已被添加远程服务器的登录信息
 
-![known_hosts](./_images/known_hosts.PNG)
+![known_hosts](/_images/known_hosts.PNG)
