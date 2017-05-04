@@ -8,6 +8,9 @@
 ### BIRT
 - [BIRT_Help](./BIRT/BIRT_Help.md)
 
+### DataBase
+- [Mysq连接及编码问题](./DataBase/Mysq连接及编码问题.md)
+
 ### Python
 - [Python基础](./Python/Python基础.md)
 - [Python基础函数](./Python/Python基础函数.md)
