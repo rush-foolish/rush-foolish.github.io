@@ -68,7 +68,7 @@ mysql> select user();
     - Server通过网络传输到远端client
     - client通过bash配置的字符编码展示查询结果
 
-### 乱码解决方案
+#### 乱码解决方案
 
 1. 查看python的默认连线语系，**#-\*- coding:utf-8 -\*-**
 2. 查看mysql server/client本身有无问题
