@@ -104,7 +104,7 @@ mysql> show create table test3;
 
 针对以上情况：
 
-1. 只想针对某个表或者某个字段进行charset 设置，可以和在ddl时设定
+1.只想针对某个表或者某个字段进行charset 设置，可以和在ddl时设定
 
 ```sql
 CREATE TABLE `test3` (
@@ -124,7 +124,7 @@ CREATE TABLE `test3` (
 )
 ```
 
-2. 更改某个整个db的character
+2.更改某个整个db的character
 
 ```bash
 mysql> alter database test character set utf8
@@ -143,7 +143,7 @@ mysql>  show variables like '%char%';
 +--------------------------+--------------------------------------------------------+
 ```
 
-3. 整体一次性更改，以后创建任何db／table的时候默认为utf8
+3.整体一次性更改，以后创建任何db／table的时候默认为utf8
 
 - 首先停止当前的mysql sever,切换到root，更改my.cnf文件
 
