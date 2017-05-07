@@ -10,6 +10,7 @@
 
 ### DataBase
 - [Mysq连接及编码问题](./DataBase/Mysq连接及编码问题.md)
+- [数据库表存储及索引](./DataBase/数据库表存储及索引.md)
 
 ### Python
 - [Python基础](./Python/Python基础.md)
