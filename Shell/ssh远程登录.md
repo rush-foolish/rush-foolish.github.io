@@ -5,10 +5,16 @@
 ### ssh 基本用法
 
 ```bash
+＃连接
 ssh -p 22 user@host
 
 "-p 22 : portnumber 22"
 "user@host: 分配的用户名@远程登录服务器主机的host"
+
+#本地和远程之间文件的复制
+scp -P1433 localfile rachel@114.215.236.49:cloudfile
+scp -P1433 远程用户名@IP 地址: path/文件名 localfile
+
 ```
 
 ### ssh的处理过程
