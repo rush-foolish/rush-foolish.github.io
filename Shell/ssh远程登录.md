@@ -15,6 +15,9 @@ ssh -p 22 user@host
 scp -P1433 localfile rachel@114.215.236.49:cloudfile
 scp -P1433 远程用户名@IP 地址: path/文件名 localfile
 
+#远程连接数据库
+mysql -u username -p -h hostip
+
 ```
 
 ### ssh的处理过程
