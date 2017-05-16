@@ -1,5 +1,5 @@
 ## Welcome to R's Blog 
-> The Harder, the Luckier
+> The Harder, the Luckier... >>go to my [**GITHub**](https://github.com/rush-foolish) page
 
 ## Index
 

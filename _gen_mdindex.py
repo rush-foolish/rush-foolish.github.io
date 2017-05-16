@@ -50,7 +50,7 @@ def createFile(fname,ftxt):
 	f.close()
 
 header = "## Welcome to R's Blog \n\
-> The Harder, the Luckier\n\n\
+> The Harder, the Luckier... >>go to my [**GITHub**](https://github.com/rush-foolish) page\n\n\
 ## Index\n\n\
 ---\n"
 footer = "\n---\n\
