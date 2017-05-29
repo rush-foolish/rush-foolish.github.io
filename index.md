@@ -27,6 +27,7 @@
 - [input语句及符号简介](./SAS/input语句及符号简介.md)
 
 ### Shell
+- [Shell进程管理](./Shell/Shell进程管理.md)
 - [ssh远程登录](./Shell/ssh远程登录.md)
 - [VIM相关操作](./Shell/VIM相关操作.md)
 
