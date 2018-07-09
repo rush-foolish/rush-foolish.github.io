@@ -23,6 +23,10 @@
 - [高级特性](./Python/高级特性.md)
 - [高阶函数](./Python/高阶函数.md)
 
+### QlikView
+- [QlikView几种常用函数](./QlikView/QlikView几种常用函数.md)
+- [QlikView简介](./QlikView/QlikView简介.md)
+
 ### SAS
 - [input语句及符号简介](./SAS/input语句及符号简介.md)
 
@@ -30,6 +34,7 @@
 - [Shell进程管理](./Shell/Shell进程管理.md)
 - [ssh远程登录](./Shell/ssh远程登录.md)
 - [VIM相关操作](./Shell/VIM相关操作.md)
+- [常用命令](./Shell/常用命令.md)
 
 ---
 Actually, miscellaneous notes rather than blog...

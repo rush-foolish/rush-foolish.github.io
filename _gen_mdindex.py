@@ -1,4 +1,7 @@
-#####################################################
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+
+####################################################
 #	File Name: _gen_mdindex.py
 #	Author: Rachel Liu
 #	Created Time: 2017-04-14
@@ -8,8 +11,6 @@
 #	
 #	Copyright (C)2017 All Rights Reserved
 #####################################################
-#!/usr/bin/env python
-#-*- coding:utf-8 -*-
 
 import os
 #markdown index content
