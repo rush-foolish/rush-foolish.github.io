@@ -34,11 +34,13 @@
 #### *使用*
 
 1. 可连接到各种关系型数据库
+
 ```
 ODBC CONNECT TO DB_NAME
 ```
 
 2. 可调用其他qvs脚本，或者自定义function
+
 ```
 1. 引入其他脚本
 $(Include=filepath\config.qvs)
