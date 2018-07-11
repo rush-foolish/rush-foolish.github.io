@@ -26,6 +26,7 @@
 ### QlikView
 - [QlikView几种常用函数](./QlikView/QlikView几种常用函数.md)
 - [QlikView简介](./QlikView/QlikView简介.md)
+- [QlikView高级函数](./QlikView/QlikView高级函数.md)
 
 ### SAS
 - [input语句及符号简介](./SAS/input语句及符号简介.md)
