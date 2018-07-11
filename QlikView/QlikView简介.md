@@ -44,6 +44,13 @@ ODBC CONNECT TO DB_NAME
 ```
 1. 引入其他脚本
 $(Include=filepath\config.qvs)
+eg:
+    SUB procedureName('p1', 'p2')
+      ...
+    END SUB
+
+    Call procedureName('parameter1', 'parameter2')
+
 
 2.自定义qlikview内部function
 Open .qvw file -->Tools -->Edit Module -->type something below in the tab -->Check -->OK
