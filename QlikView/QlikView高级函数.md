@@ -8,9 +8,10 @@
 #####  CrossTable-行转列 （turn a cross table into a straight table）
 
 
-	crosstable (attribute field name, data field name [ , n ] ) ( loadstatement/selectstatement )
+crosstable (attribute field name, data field name [ , n ] ) ( loadstatement/selectstatement )
+	
 
-	```SQL
+	```
 	/* 
 	attribute field: the field should be kept as dimension, the column name
 	data field: the field that contains the attribute value 
@@ -36,20 +37,20 @@
 
 	Result:
 
-	Person | Location | Month | Sales
-	---------- | ------------ | ---------- | ----------
-	Bob | London | Feb | 200
-	Bob | London | Jan | 100
-	Bob | London | Mar | 300
-	Kate | New York | Feb | 500
-	Kate | New York | Jan | 400
-	Kate | New York | Mar | 600
+Person | Location | Month | Sales
+---------- | ------------ | ---------- | ----------
+Bob | London | Feb | 200
+Bob | London | Jan | 100
+Bob | London | Mar | 300
+Kate | New York | Feb | 500
+Kate | New York | Jan | 400
+Kate | New York | Mar | 600
 
 
 #####  列转行 （turn a straight table into a cross table ）
 
 
-	```SQL
+	```
 
 	SUB ReverseCrossTable(vOriginTable, vResultTable)	
 	//create Generic Table, will create several temp table Genric_Table.Jan, Genric_Table.Feb, Genric_Table.Mar
@@ -169,19 +170,19 @@
 
 	Result:
 
-	NodeID | NodeName | AncestorID | AncestorName | DepthDiff
-	-------- | ------------ | ------------ | ----------------- | --------
-	1 | London | 1 | London | 0
-	1 | London | 4 | UK | 1
-	1 | London | 5 | Europe | 2
-	2 | Munich | 2 | Munich | 0
-	2 | Munich | 3 | Germany | 1
-	2 | Munich | 5 | Europe | 2
-	3 | Germany | 3 | Germany | 0
-	3 | Germany | 5 | Europe | 1
-	4 | UK | 4 | UK | 0
-	4 | UK | 5 | Europe | 1
-	5 | Europe | 5 | Europe | 0
+NodeID | NodeName | AncestorID | AncestorName | DepthDiff
+-------- | ------------ | ------------ | ----------------- | --------
+1 | London | 1 | London | 0
+1 | London | 4 | UK | 1
+1 | London | 5 | Europe | 2
+2 | Munich | 2 | Munich | 0
+2 | Munich | 3 | Germany | 1
+2 | Munich | 5 | Europe | 2
+3 | Germany | 3 | Germany | 0
+3 | Germany | 5 | Europe | 1
+4 | UK | 4 | UK | 0
+4 | UK | 5 | Europe | 1
+5 | Europe | 5 | Europe | 0
 	
 
 
