@@ -2,10 +2,11 @@
 
 > 在qlikview中， mapping只适用于1 to 1 或者 1 to many， 对于一对多的或者多对多的 最好用join的方式
 
-- *ApplyMap*
+##### *ApplyMap*
+
 ApplyMap('map_name', expression [ , default_mapping ] )
 
-*Note*: ApplyMap常被用于获得对应数据值和where筛选条件中，同样被用于where条件中的还有Exists。
+*Note*: ApplyMap常被用于获得对应数据值和where筛选条件中，同样被用于where条件中的还有Exists
 
 ```
 1. ApplyMap
@@ -37,6 +38,7 @@ Sf, Risttu] ;
 Drop Field 'CCode' from Salespersons;
 
 ```
+
 Country | Salesperson
 ----------------- | ---------
 Sweden | John
@@ -48,7 +50,8 @@ Denmark | Preben
 Rest of the world | Risttu
 
 
-- *MapSubString*
+
+##### *MapSubString*
 
 替换对应的string, 而map table也只能是1 to 1 或者 1 to many
 
@@ -119,7 +122,8 @@ A | C
 1 | xx
 4 | yy
 
-- *Left Join* 
+
+##### *Left Join* 
 
 --Note:数据经过join后，最后只有一张表存在，相当于主表上多拿到了几个fields--
 
@@ -143,7 +147,7 @@ A | B | C
 3 | ee | 
 
 
-- *Left Keep*
+##### *Left Keep*
 
 --Note:最终会得到两张独立的表，主表不便， 次表只保留能连接上主表的记录
 
@@ -176,7 +180,7 @@ A | C
 
 > 常被用于loop中，作为收集多个特定的source用
 
-*peek(fieldname [ , row [ , tablename ] ] )*
+##### peek(fieldname [ , row [ , tablename ] ] )*
 
 --Returns the contents of the fieldname in the record specified by row in the internal table tablename. Data are fetched from the associative QlikView database.-- 
 
