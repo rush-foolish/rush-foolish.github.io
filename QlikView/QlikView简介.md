@@ -33,13 +33,13 @@
 
 #### *使用*
 
-1. 可连接到各种关系型数据库
+-   **1.可连接到各种关系型数据库**
 
 ```
 ODBC CONNECT TO DB_NAME
 ```
 
-2. 可调用其他qvs脚本，或者自定义function
+-   **2.可调用其他qvs脚本，或者自定义function**
 
 ```
 1. 引入其他脚本
@@ -62,9 +62,9 @@ Function addType(istring, pattern)
 END Function
 ```
 
-3. 对于存储在qv内存中的表， 相同的字段名会自己做连接，如不想连接可以用Noconcatenate 让表不作关联 
-具体各表之间的关系，可以查看在Edit Script -->Table Viewer中查看。
+-   **3. 对于存储在qv内存中的表， 相同的字段名会自己做连接，如不想连接可以用Noconcatenate 让表不作关联 
+具体各表之间的关系，可以查看在Edit Script -->Table Viewer中查看**
 
-4. 对于不使用的临时表，及时Drop，不占用内存
+-   **4. 对于不使用的临时表，及时Drop，不占用内存**
 
-5. 对于主表是大表，left join慎用， 防止data volume 太大引起脚本运行失败
+-   **5. 对于主表是大表，left join慎用， 防止data volume 太大引起脚本运行失败**
